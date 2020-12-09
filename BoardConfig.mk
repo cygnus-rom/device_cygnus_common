@@ -13,3 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+
+# Filesystem
+TARGET_FS_CONFIG_GEN += device/cygnus/common/configs/filesystem/config.fs
