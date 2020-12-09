@@ -26,3 +26,9 @@ ifneq (,$(filter servicetracker, $(TARGET_COMMON_CYGNUS_COMPONENTS)))
 include device/cygnus/common/servicetracker/servicetracker.mk
 endif
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
+    device/cygnus/common/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    device/cygnus/common/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml
+
