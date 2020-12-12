@@ -16,3 +16,6 @@
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/cygnus-proprietary/servicetracker/servicetracker-vendor.mk)
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.2.vendor
